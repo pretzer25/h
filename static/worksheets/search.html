@@ -65,7 +65,7 @@
     <link rel="stylesheet" href="assets/button.css">
     <link rel="stylesheet" href="assets/search.css">
   </head>
-  <body>
+  <body onload="search(event)">
     <div class="wrapper">
       <nav class="navbar">
         <div class="navbar__container">
@@ -100,10 +100,10 @@
             <div class="block__body">
               <div class="search-container">
                 <center>
-                  <form onsubmit="search(event)">                    
-                    <input type="text" id="searchInput" placeholder="Search...">
-                    <br>
-                    <button type="submit">Go!</button>
+                  <form>                    
+  <input type="text" id="searchInput" value="example.org" readonly>
+  <br>
+  <button type="submit" disabled>Go!</button>
                   </form>
                   <br>
                 </center>
